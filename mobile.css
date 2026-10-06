@@ -45,20 +45,19 @@
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
-  /* 헤더: 로고 첫 줄, 메뉴는 아래 줄로 줄바꿈 */
+  /* 헤더: RE:SET 가운데, 좌우에 메뉴 3개씩 (세로로 작게) */
   header {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 14px 18px !important;
-    padding: 24px 16px !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    gap: 12px !important;
+    padding: 20px 16px !important;
   }
-  header > a { order: -1; width: 100%; text-align: center; }
+  header > a { font-size: 22px !important; }
   header > nav {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 8px 16px !important;
-    font-size: 11px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    font-size: 10px !important;
     letter-spacing: 0.08em !important;
   }
+  header > nav:last-of-type { align-items: flex-end !important; }
 }
