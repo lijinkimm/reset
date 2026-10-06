@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+html,body{margin:0;padding:0;background:#182D5C;color:#F7F2EC;font-family:'Pretendard',system-ui,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+*{box-sizing:border-box}
+a{color:#F7F2EC;text-decoration:none}
+a:hover{color:#B9C6E2}
+</style>
+<script src="./image-slot.js"></script>
+<link rel="stylesheet" href="mobile.css">
+</helmet>
+
+<div style="width:100%;background:#182D5C;overflow-x:clip">
+
+  <header style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:36px 4.2vw">
+    <nav style="display:flex;gap:clamp(12px,2vw,40px);white-space:nowrap;font-size:clamp(12px,1vw,14px);font-weight:600;letter-spacing:clamp(0.04em,0.6vw,0.12em)">
+      <a href="About.dc.html" style="color:#B9C6E2">ABOUT</a>
+      <a href="Approach.dc.html" style="color:#F7F2EC">APPROACH</a>
+      <a href="Expertise.dc.html" style="color:#F7F2EC">EXPERTISE</a>
+    </nav>
+    <a href="Main Page Navy.dc.html" style="font-size:30px;font-weight:800;letter-spacing:-0.02em;color:#F7F2EC">RE:SET</a>
+    <nav style="display:flex;gap:clamp(12px,2vw,40px);white-space:nowrap;justify-content:flex-end;font-size:clamp(12px,1vw,14px);font-weight:600;letter-spacing:clamp(0.04em,0.6vw,0.12em)">
+      <a href="Experience.dc.html" style="color:#F7F2EC">EXPERIENCE</a>
+      <a href="Counseling.dc.html" style="color:#F7F2EC">COUNSELING</a>
+      <a href="Contact.dc.html" style="color:#F7F2EC">CONTACT</a>
+    </nav>
+  </header>
+
+  
+
+  <!-- 01 Who I Am : image left -->
+  <section data-screen-label="01 Who I Am" style="background:#213A70;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:0;align-items:stretch">
+    <div style="width:100%;aspect-ratio:1/1;background:#213A70;overflow:hidden;border-radius:0"><img src="assets/counselor.jpg" alt="상담사 프로필" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block"></div>
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,3vw,44px);padding:clamp(40px,6vw,120px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        
+        <h2 style="margin:0;font-size:clamp(30px,3.2vw,50px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;text-wrap:balance">상담과 스포츠 현장을 연결합니다.</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 560px; font-size: 13px; line-height: 1.8; color: #B9C6E2">
+        <p style="margin: 0; font-size: 13px">저는 상담학을 전공한 상담학 박사이자,<br>운동선수의 심리적 성장과 경기력 향상을 함께 지원하는 상담 전문가입니다.</p>
+        <p style="margin:0">수행불안, 자신감 저하, 완벽주의, 평가에 대한 부담, 감정조절과 자기조절 등<br>선수들이 경기와 훈련 과정에서 경험하는 다양한 심리적 어려움을 다뤄왔습니다.</p>
+        <p style="margin:0;color:#F7F2EC">제가 지향하는 상담은 상담실에서의 이해를<br>실제 경기와 일상의 변화로 연결하는 상담입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Why I Started : image right -->
+  <section data-screen-label="02 Why I Started" style="padding:0;display:flex;flex-wrap:wrap-reverse;gap:0;align-items:stretch">
+    <div style="flex:1 1 320px;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,3vw,44px);padding:clamp(40px,6vw,120px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        
+        <h2 style="margin: 0; font-size: clamp(30px,3.2vw,50px); font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; text-transform: uppercase">Why Counseling?</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;max-width:560px;font-size:16px;line-height:1.8;color:#B9C6E2">
+        <p style="margin: 0; font-size: 13px">오랜 시간 선수와 지도자를 가까이에서 만나며,<br>경기력은 기술과 체력만으로 설명할 수 없다는 사실을 반복해서 보았습니다.</p>
+        <p style="margin: 0; font-size: 13px">충분히 훈련한 선수도 중요한 순간의 긴장, 실패에 대한 두려움, <br>자기비난으로 자신의 능력을 충분히 발휘하지 못하기도 합니다.</p>
+        <p style="margin: 0; font-size: 13px">반대로 자신의 감정을 이해하고, 생각을 조절하며,<br>다시 해야 할 행동에 집중할 수 있는 선수는 어려운 상황에서도 수행을 회복합니다.</p>
+        <p style="margin: 0; color: #F7F2EC; font-size: 13px">이 경험이 사람의 마음과 행동을 더 체계적으로 이해하고 싶다는 관심으로 이어졌고,<br>상담학을 전문적으로 공부하게 된 계기가 되었습니다.</p>
+      </div>
+    </div>
+    <div style="flex:1 1 320px;aspect-ratio:1/1;background:#213A70;overflow:hidden;border-radius:0">
+      <image-slot shape="rect" radius="0" id="about-why" placeholder="02 이미지 — 선수·지도자 현장" style="display:block;width:100%;height:100%"></image-slot>
+    </div>
+  </section>
+
+  <!-- 03 What I Value : image left -->
+  <section data-screen-label="03 What I Value" style="background:#213A70;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:0;align-items:stretch">
+    <div style="width:100%;aspect-ratio:1/1;background:#213A70;overflow:hidden;border-radius:0">
+      <image-slot shape="rect" radius="0" id="about-value" placeholder="03 이미지 — 집중하는 선수" style="display:block;width:100%;height:100%"></image-slot>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,3vw,44px);padding:clamp(40px,6vw,120px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        
+        <h2 style="margin: 0; font-size: clamp(30px,3.2vw,50px); font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; text-transform: uppercase">Autonomy. <br>Choice. <br>Focus.</h2>
+        <p style="margin: 0; font-size: 13px; line-height: 1.8; color: #B9C6E2">상담에서 가장 중요하게 생각하는 것은<br>자율성, 선택, 그리고 집중입니다.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:28px;max-width:560px">
+        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em">AUTONOMY</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.7; color: #B9C6E2">내담자의 속도와 경험을 존중합니다.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em">CHOICE</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.7; color: #B9C6E2">상담자가 대신 결정하기보다 스스로 선택할 수 있도록 돕습니다.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em">FOCUS</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.7; color: #B9C6E2; text-wrap: pretty">감정을 이해하는 데서 끝나지 않고, 지금 필요한 행동으로 돌아갈 수 있도록 돕습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 My Philosophy -->
+  <section data-screen-label="04 My Philosophy" style="position:relative;overflow:hidden;min-height:100vh;padding:clamp(100px,10vw,180px) 4.2vw;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(40px,4vw,64px);text-align:center">
+    
+    <img src="assets/philosophy-sprint.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%">
+    <div style="position:absolute;inset:0;background:rgba(24,45,92,0.55)"></div>
+    <p style="position: relative; margin: 0; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em; text-wrap: balance; width: 526px; height: 27px">“감정을 인정하고, 다음 행동을 선택할 수 있도록 돕는 상담.”</p>
+    <p style="position: relative; margin: 0; font-size: clamp(16px,1.4vw,22px); font-weight: 500; line-height: 1.6; letter-spacing: 0.02em; color: #F7F2EC; text-transform: uppercase">Acknowledge the emotion.<br>Choose what comes next.</p>
+  </section>
+
+</div>
+</x-dc>
+</body>
+</html>

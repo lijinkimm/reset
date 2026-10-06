@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&amp;display=swap">
+<style>
+html,body{margin:0;padding:0;background:#182D5C;color:#F7F2EC;font-family:'Pretendard',system-ui,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+*{box-sizing:border-box}
+a{color:#F7F2EC;text-decoration:none}
+a:hover{color:#B9C6E2}
+</style>
+<script src="./image-slot.js"></script>
+<link rel="stylesheet" href="mobile.css">
+</helmet>
+
+<div style="width:100%;background:#182D5C;overflow-x:clip">
+
+  <!-- 01 Hero -->
+  <section data-screen-label="01 Hero" style="position:relative;min-height:max(100vh,720px);display:flex;flex-direction:column;overflow:hidden;background:#182D5C">
+    <img src="assets/hero-relay.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%">
+    <div style="position:absolute;inset:0;background:rgba(24,45,92,0.45)"></div>
+
+    <header style="position:relative;z-index:2;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:36px 4.2vw">
+      <nav style="display:flex;gap:clamp(12px,2vw,40px);flex-wrap:nowrap;white-space:nowrap;font-size:clamp(12px,1vw,14px);font-weight:600;letter-spacing:clamp(0.04em,0.6vw,0.12em)">
+        <a href="About.dc.html" style="color:#F7F2EC">ABOUT</a>
+        <a href="Approach.dc.html" style="color:#F7F2EC">APPROACH</a>
+        <a href="Expertise.dc.html" style="color:#F7F2EC">EXPERTISE</a>
+      </nav>
+      <a href="Main Page Navy.dc.html" style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: #F7F2EC">RE:SET</a>
+      <nav style="display:flex;gap:clamp(12px,2vw,40px);flex-wrap:nowrap;white-space:nowrap;justify-content:flex-end;align-items:center;font-size:clamp(12px,1vw,14px);font-weight:600;letter-spacing:clamp(0.04em,0.6vw,0.12em)">
+        <a href="Experience.dc.html" style="color:#F7F2EC">EXPERIENCE</a>
+        <a href="Counseling.dc.html" style="color:#F7F2EC">COUNSELING</a>
+        <a href="Contact.dc.html" style="color:#F7F2EC">CONTACT</a>
+        
+      </nav>
+    </header>
+
+    <div style="position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;padding:0 24px;text-align:center">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:28px">
+        <h1 style="margin: 0; font-size: clamp(48px,6.4vw,108px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; color: #F7F2EC">Understand.<br>Regulate.<br>Perform.</h1>
+        <p style="margin:0;font-size:clamp(16px,1.4vw,22px);font-weight:500;line-height:1.5;letter-spacing:0.02em;color:#F7F2EC;text-wrap:balance">Psychological Counseling &amp; Mental Performance for Athletes</p>
+      </div>
+      <a href="Approach.dc.html" style="display:inline-flex;align-items:center;justify-content:center;padding:22px 48px;background:#F7F2EC;color:#182D5C;font-size:16px;font-weight:600;letter-spacing:0.18em" style-hover="background:#E7ECEF;color:#182D5C">EXPLORE</a>
+    </div>
+    
+  </section>
+
+  <!-- 02 Approach -->
+  <section data-screen-label="02 Approach" style="position:relative;overflow:hidden;background:#182D5C;color:#F7F2EC;height:100vh;padding:clamp(40px,4vw,72px) 4.2vw;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,6vw,100px);align-items:center">
+    <img src="assets/approach-homeplate.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+    <div style="position:absolute;inset:0;background:rgba(24,45,92,0.55)"></div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:clamp(32px,3vw,48px)">
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:20px">
+        <span style="font-size:14px;font-weight:600;letter-spacing:0.2em;color:#E7ECEF">COUNSELING × PERFORMANCE</span>
+        <h2 style="margin: 0; color: #F7F2EC; font-size: clamp(34px,3.4vw,54px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase">More than<br>mental coaching.</h2>
+        <p style="margin:0;font-size:clamp(16px,1.2vw,18px);line-height:1.8;color:#E7ECEF">심리적 어려움을 이해하는 것부터<br>실제 수행에 필요한 변화까지 함께 다룹니다.</p>
+      </div>
+      <div style="width:100%;display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid rgba(247,242,236,0.35)">
+        <div style="padding:clamp(14px,1.4vw,20px) 0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;border-bottom:1px solid rgba(247,242,236,0.35)">
+          <span style="font-size:clamp(24px,2.4vw,36px);font-weight:700;line-height:1.1;letter-spacing:-0.01em;color:#F7F2EC">MIND</span>
+          <p style="margin:0;font-size:clamp(16px,1.2vw,18px);line-height:1.6;color:#E7ECEF">Understand thoughts, emotions, and patterns.</p>
+        </div>
+        <div style="padding:clamp(14px,1.4vw,20px) 0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;border-bottom:1px solid rgba(247,242,236,0.35)">
+          <span style="font-size:clamp(24px,2.4vw,36px);font-weight:700;line-height:1.1;letter-spacing:-0.01em;color:#F7F2EC">SKILLS</span>
+          <p style="margin:0;font-size:clamp(16px,1.2vw,18px);line-height:1.6;color:#E7ECEF">Build focus, regulation, and routines.</p>
+        </div>
+        <div style="padding:clamp(14px,1.4vw,20px) 0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;border-bottom:1px solid rgba(247,242,236,0.35)">
+          <span style="font-size:clamp(24px,2.4vw,36px);font-weight:700;line-height:1.1;letter-spacing:-0.01em;color:#F7F2EC">ACTION</span>
+          <p style="margin:0;font-size:clamp(16px,1.2vw,18px);line-height:1.6;color:#E7ECEF">Apply them in real performance situations.</p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </section>
+
+  <!-- 03 Expertise -->
+  <section data-screen-label="03 Expertise" ref="{{ expSection }}" style="position:relative;background:#182D5C;height:{{ expHeight }}">
+  <div style="position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(40px,4vw,64px)">
+    <h2 style="margin:0;padding:0 4.2vw;font-size:clamp(36px,4vw,64px);font-weight:700;letter-spacing:-0.01em">AREAS OF EXPERTISE</h2>
+    <div ref="{{ expTrack }}" style="display:flex;align-items:center;gap:clamp(64px,6.5vw,112px);padding:4vh 8vw;width:max-content;will-change:transform">
+      <div style="flex:none;width:min(clamp(360px,38vw,620px),calc((100vh - 240px)*0.86));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:1/1;background:#213A70;overflow:hidden;margin-bottom:8px"><image-slot id="img-exp-01" placeholder="PERFORMANCE ANXIETY 이미지" shape="rect"></image-slot></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">01 · PERFORMANCE ANXIETY</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">경기 수행불안</h3>
+        </div>
+        <p style="margin:0;font-size:10px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">중요한 순간의 긴장과 압박, 실패에 대한 두려움</p>
+      </div>
+      <div style="flex:none;width:min(clamp(260px,26vw,420px),calc((100vh - 240px)*0.48));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:9/16;background:#213A70;overflow:hidden;margin-bottom:8px"><img src="assets/exp-confidence.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">02 · SELF-CONFIDENCE</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">자신감</h3>
+        </div>
+        <p style="margin: 0; font-size: 10px; line-height: 1.6; color: #B9C6E2; text-wrap: pretty">평가와 결과에 따라 흔들리는 자신감과 자기비난</p>
+      </div>
+      <div style="flex:none;width:min(clamp(360px,38vw,620px),calc((100vh - 240px)*0.86));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:1/1;background:#213A70;overflow:hidden;margin-bottom:8px"><img src="assets/exp-perfectionism.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">03 · PERFECTIONISM</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">완벽주의</h3>
+        </div>
+        <p style="margin:0;font-size:10px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">실수에 대한 과도한 부담과 높은 자기기준</p>
+      </div>
+      <div style="flex:none;width:min(clamp(260px,26vw,420px),calc((100vh - 240px)*0.48));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:9/16;background:#213A70;overflow:hidden;margin-bottom:8px"><image-slot id="img-exp-04" placeholder="FOCUS &amp; ATTENTION 이미지" shape="rect"></image-slot></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">04 · FOCUS &amp; ATTENTION</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">주의조절</h3>
+        </div>
+        <p style="margin:0;font-size:10px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">경기 중 현재 수행에 다시 집중하는 능력</p>
+      </div>
+      <div style="flex:none;width:min(clamp(360px,38vw,620px),calc((100vh - 240px)*0.86));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:1/1;background:#213A70;overflow:hidden;margin-bottom:8px"><img src="assets/exp-emotional.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">05 · EMOTIONAL REGULATION</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">감정조절</h3>
+        </div>
+        <p style="margin:0;font-size:10px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">불안·분노·좌절 속에서도 필요한 행동을 선택하는 능력</p>
+      </div>
+      <div style="flex:none;width:min(clamp(260px,26vw,420px),calc((100vh - 240px)*0.48));display:flex;flex-direction:column;gap:16px">
+        <div style="width:100%;aspect-ratio:9/16;background:#213A70;overflow:hidden;margin-bottom:8px"><img src="assets/exp-recovery.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.16em;color:#B9C6E2">06 · RECOVERY</span>
+          <h3 style="margin:0;font-size:clamp(24px,2vw,30px);font-weight:700;letter-spacing:-0.02em">회복</h3>
+        </div>
+        <p style="margin:0;font-size:10px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">실수, 슬럼프, 부상 이후 다시 수행으로 돌아가는 과정</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- 04 Process -->
+  <section data-screen-label="04 Process" style="padding:clamp(80px,8vw,140px) 4.2vw;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,6vw,100px);align-items:end">
+    <div style="width:100%;aspect-ratio:4/5;background:#213A70"><image-slot id="img-1" placeholder="상담 진행 이미지" shape="rect" src="assets/process-room.jpeg"></image-slot></div>
+    <div style="display:flex;flex-direction:column;gap:clamp(40px,4vw,64px)">
+      <h2 style="margin: 0; font-size: clamp(34px,3.8vw,60px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; text-transform: uppercase">From <br>understanding<br>to action.</h2>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        
+        <div style="display:flex;flex-direction:column;border-top:1px solid #3A5591">
+          <div style="display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid #3A5591;align-items:baseline">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#B9C6E2">01</span>
+            <div style="display:grid;grid-template-columns:minmax(110px,0.4fr) minmax(0,1fr);gap:16px;align-items:baseline">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.18em">NOTICE</span>
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">현재의 생각, 감정, 신체 반응을 알아차립니다.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid #3A5591;align-items:baseline">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#B9C6E2">02</span>
+            <div style="display:grid;grid-template-columns:minmax(110px,0.4fr) minmax(0,1fr);gap:16px;align-items:baseline">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.18em">UNDERSTAND</span>
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">반복되는 심리적 패턴을 이해합니다.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid #3A5591;align-items:baseline">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#B9C6E2">03</span>
+            <div style="display:grid;grid-template-columns:minmax(110px,0.4fr) minmax(0,1fr);gap:16px;align-items:baseline">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.18em">CHOOSE</span>
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">현재 상황에서 필요한 선택과 행동을 찾습니다.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid #3A5591;align-items:baseline">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#B9C6E2">04</span>
+            <div style="display:grid;grid-template-columns:minmax(110px,0.4fr) minmax(0,1fr);gap:16px;align-items:baseline">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.18em">APPLY</span>
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#B9C6E2;text-wrap:pretty">상담에서 발견한 방법을 실제 경기와 일상에 적용합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04b Counselor -->
+  <section data-screen-label="04b Counselor" style="padding:clamp(40px,4vw,80px) 4.2vw clamp(80px,8vw,140px);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,6vw,100px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:clamp(32px,3.5vw,56px)">
+      <h2 style="margin:0;font-size:clamp(34px,3.8vw,60px);font-weight:700;line-height:1.15;letter-spacing:-0.02em;text-transform:uppercase;color:#F7F2EC">Psychology Meets Performance</h2>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #3A5591">
+        <div style="padding:16px 0;font-size:16px;font-weight:600;letter-spacing:0.02em">Ph.D. in Counseling<br>Sport Psychology &amp; Mental Performance Consultant</div>
+        <div style="padding:16px 0;font-size:16px;font-weight:600">약 15년 상담 현장 경험</div>
+        <div style="padding:16px 0;font-size:16px;font-weight:600">한국프로스포츠협회 상담위원</div>
+        <div style="padding:16px 0;font-size:16px;font-weight:600">대학야구연맹 멘탈이사</div>
+        <div style="padding:16px 0;font-size:16px;font-weight:600">임상심리사 1급 · 청소년상담사 1급</div>
+      </div>
+      <p style="margin:0;max-width:520px;font-size:16px;line-height:1.75;color:#B9C6E2;text-wrap:pretty">운동선수의 심리적 어려움을 이해하는 것에서 끝나지 않고,<br>스스로 조절하고 실제 수행으로 돌아갈 수 있도록 함께합니다.</p>
+      <a href="#" style="align-self:flex-start;display:inline-flex;padding:18px 36px;border:1px solid #F7F2EC;color:#F7F2EC;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase" style-hover="background:#F7F2EC;color:#182D5C">View full experience</a>
+    </div>
+    <div style="width:100%;aspect-ratio:4/5;background:#213A70;overflow:hidden"><img src="assets/counselor.jpg" alt="상담사 프로필" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block"></div>
+  </section>
+
+  <!-- 04c CTA -->
+  <section data-screen-label="04c CTA" style="position:relative;overflow:hidden;min-height:100vh;box-sizing:border-box;padding:clamp(80px,8vw,140px) 4.2vw;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(36px,3vw,52px);text-align:center">
+    <img src="assets/cta-track.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+    <div style="position:absolute;inset:0;background:rgba(24,45,92,0.55)"></div>
+    <h2 style="position:relative;margin:0;font-size:clamp(48px,7vw,120px);font-weight:700;line-height:1;letter-spacing:-0.03em;color:#F7F2EC">READY TO RE:SET?</h2>
+    <a href="mailto:moonis2057@gmail.com" style="position:relative;display:inline-flex;padding:22px 48px;background:#F7F2EC;color:#182D5C;font-size:16px;font-weight:600;letter-spacing:0.18em" style-hover="background:#E7ECEF;color:#182D5C">START A CONVERSATION</a>
+  </section>
+
+  <!-- 05 Welcome -->
+  
+
+  <!-- 06 About -->
+  
+
+  <!-- 07 Team -->
+  
+
+  <!-- 08 Visit -->
+  
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  expSection = React.createRef();
+  expTrack = React.createRef();
+  state = { expHeight: '300vh' };
+  componentDidMount() {
+    this.onScroll = () => this.updateExp();
+    this.onResize = () => this.measureExp();
+    document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onResize);
+    setTimeout(() => this.measureExp(), 50);
+    let lastY = null;
+    const loop = () => {
+      const y = window.scrollY;
+      if (y !== lastY) { lastY = y; this.updateExp(); }
+      this.raf = requestAnimationFrame(loop);
+    };
+    this.raf = requestAnimationFrame(loop);
+  }
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+    document.removeEventListener('scroll', this.onScroll, { capture: true });
+    window.removeEventListener('resize', this.onResize);
+  }
+  measureExp() {
+    const t = this.expTrack.current; if (!t) return;
+    this.dist = Math.max(0, t.scrollWidth - window.innerWidth);
+    const vh = window.innerHeight;
+    const hgt = (vh + this.dist) + 'px';
+    if (hgt !== this.state.expHeight) this.setState({ expHeight: hgt }, () => this.updateExp()); else this.updateExp();
+  }
+  updateExp() {
+    const s = this.expSection.current, t = this.expTrack.current; if (!s || !t) return;
+    const r = s.getBoundingClientRect();
+    const range = r.height - window.innerHeight;
+    const p = range > 0 ? Math.min(1, Math.max(0, -r.top / range)) : 0;
+    t.style.transform = 'translate3d(' + (-p * (this.dist || 0)) + 'px,0,0)';
+    const cards = Array.from(t.children), n = cards.length;
+    const active = Math.round(p * (n - 1));
+    if (active === this.activeExp) return;
+    this.activeExp = active;
+    cards.forEach((c, i) => {
+      const on = i === active;
+      c.style.transition = 'filter .5s ease, opacity .5s ease, transform .6s cubic-bezier(.2,.8,.2,1)';
+      c.style.transformOrigin = 'center center';
+      c.style.filter = on ? 'none' : 'blur(6px)';
+      c.style.opacity = on ? '1' : '0.45';
+      c.style.transform = on ? 'scale(1.18)' : 'scale(0.9)';
+      c.style.zIndex = on ? '2' : '1';
+      c.style.position = 'relative';
+    });
+  }
+  renderVals() {
+    return {
+      expSection: this.expSection,
+      expTrack: this.expTrack,
+      expHeight: this.state.expHeight,
+      programs: [
+        { title: '개인\n심리상담' },
+        { title: '부부·가족\n상담' },
+        { title: '아동·청소년\n상담' },
+        { title: '심리검사\n및 해석' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

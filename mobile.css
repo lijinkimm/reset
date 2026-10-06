@@ -1,0 +1,64 @@
+/* 모바일 레이아웃: 이미지 → 텍스트 순서로 세로 정렬 */
+@media (max-width: 768px) {
+  /* 2단 레이아웃을 1단으로 쌓고, 이미지가 든 블록을 맨 위로 */
+  section[data-screen-label="04 Process"],
+  section[data-screen-label="04b Counselor"],
+  section[data-screen-label="01 Who I Am"],
+  section[data-screen-label="02 Why I Started"],
+  section[data-screen-label="03 What I Value"],
+  section[data-screen-label="01 What Counseling Means"],
+  section[data-screen-label="02 How I Work"],
+  section[data-screen-label="02 Performance Focus"],
+  section[data-screen-label="03 Beyond Performance"],
+  section[data-screen-label^="01 Education"],
+  section[data-screen-label^="03 Programs"] {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+  }
+  section[data-screen-label="04 Process"] > :has(img, image-slot),
+  section[data-screen-label="04b Counselor"] > :has(img, image-slot),
+  section[data-screen-label="01 Who I Am"] > :has(img, image-slot),
+  section[data-screen-label="02 Why I Started"] > :has(img, image-slot),
+  section[data-screen-label="03 What I Value"] > :has(img, image-slot),
+  section[data-screen-label="01 What Counseling Means"] > :has(img, image-slot),
+  section[data-screen-label="02 How I Work"] > :has(img, image-slot),
+  section[data-screen-label="02 Performance Focus"] > :has(img, image-slot),
+  section[data-screen-label="03 Beyond Performance"] > :has(img, image-slot),
+  section[data-screen-label^="01 Education"] > :has(img, image-slot),
+  section[data-screen-label^="03 Programs"] > :has(img, image-slot) {
+    order: -1;
+    flex: none !important;
+    width: 100% !important;
+  }
+
+  /* 메인 02 Approach: 배경 이미지 위 텍스트를 한 칸 전체 폭으로 */
+  section[data-screen-label="02 Approach"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  /* Expertise 카드 그리드: 3열 → 1열 */
+  section[data-screen-label="01 Expertise"] > div[style*="repeat(3"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* 헤더: 로고 첫 줄, 메뉴는 아래 줄로 줄바꿈 */
+  header {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 14px 18px !important;
+    padding: 24px 16px !important;
+  }
+  header > a { order: -1; width: 100%; text-align: center; }
+  header > nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px 16px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.08em !important;
+  }
+}
