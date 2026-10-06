@@ -60,4 +60,31 @@
     letter-spacing: 0.08em !important;
   }
   header > nav:last-of-type { align-items: flex-end !important; }
+
+  /* 메인 Areas of Expertise: 세로 스크롤은 그대로, 카드는 옆으로 넘기기 */
+  section[data-screen-label="03 Expertise"] > div {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 80px 0 !important;
+    gap: 32px !important;
+  }
+  section[data-screen-label="03 Expertise"] > div > div {
+    width: auto !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 16px !important;
+    gap: 16px !important;
+    align-items: flex-start !important;
+  }
+  section[data-screen-label="03 Expertise"] > div > div::-webkit-scrollbar { display: none; }
+  section[data-screen-label="03 Expertise"] > div > div > div {
+    width: 78vw !important;
+    scroll-snap-align: center;
+  }
+  section[data-screen-label="03 Expertise"] > div > div > div > div:first-child {
+    aspect-ratio: 4 / 5 !important;
+  }
 }

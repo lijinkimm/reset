@@ -17,7 +17,7 @@ a{color:#F7F2EC;text-decoration:none}
 a:hover{color:#B9C6E2}
 </style>
 <script src="./image-slot.js"></script>
-<link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="mobile.css?v=3">
 </helmet>
 
 <div style="width:100%;background:#182D5C;overflow-x:clip">
@@ -273,13 +273,22 @@ class Component extends DCLogic {
   }
   measureExp() {
     const t = this.expTrack.current; if (!t) return;
+    // 모바일: 스크롤 연동 대신 손가락으로 넘기는 가로 슬라이드 (mobile.css)
+    this.mobile = window.matchMedia('(max-width: 768px)').matches;
+    if (this.mobile) {
+      t.style.transform = 'none';
+      Array.from(t.children).forEach(c => { c.style.filter = 'none'; c.style.opacity = '1'; c.style.transform = 'none'; });
+      this.activeExp = null;
+      if (this.state.expHeight !== 'auto') this.setState({ expHeight: 'auto' });
+      return;
+    }
     this.dist = Math.max(0, t.scrollWidth - window.innerWidth);
     const vh = window.innerHeight;
     const hgt = (vh + this.dist) + 'px';
     if (hgt !== this.state.expHeight) this.setState({ expHeight: hgt }, () => this.updateExp()); else this.updateExp();
   }
   updateExp() {
-    const s = this.expSection.current, t = this.expTrack.current; if (!s || !t) return;
+    const s = this.expSection.current, t = this.expTrack.current; if (!s || !t || this.mobile) return;
     const r = s.getBoundingClientRect();
     const range = r.height - window.innerHeight;
     const p = range > 0 ? Math.min(1, Math.max(0, -r.top / range)) : 0;
